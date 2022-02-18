@@ -3,4 +3,32 @@
   padding: 0;
   position: relative;
 }
+
+header {
+  padding: 5% 20%;
+}
+
+header * {
+  font-size: 20px;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header .currency-select-section {
+  margin: 10px 0;
+}
+
+body {
+  background-color: #c6ebbf;
+  text-align: center;
+}
+
+body img {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  opacity: 0.7;
+  border-radius: 20px;
+}
 /*# sourceMappingURL=App.css.map */
