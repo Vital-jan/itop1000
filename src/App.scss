@@ -1,4 +1,5 @@
 $main_bgc: #c6ebbf;
+$smartphone: 768px;
 
 * {
   margin: 0;
@@ -6,18 +7,41 @@ $main_bgc: #c6ebbf;
   position: relative;
 }
 
+.app,
+.root,
+body {
+  height: 100%;
+}
+
 header {
+  padding: 5px 20px;
+  @media (max-width: $smartphone) {
+    padding: 5px;
+  }
   * {
     font-size: 20px;
     margin: 5px 0;
-    padding: 5px;
     border-radius: 5px;
+    padding: 5px;
   }
-  padding: 5% 20%;
   .currency-select-section {
+    text-align: center;
     margin: 10px 0;
+    select {
+      max-width: 90%;
+      margin-right: 20px;
+      @media (max-width: $smartphone) {
+        margin-right: 0;
+        width: 90%;
+      }
+    }
+    input {
+      max-height: 1.5em;
+      max-width: 85%;
+    }
   }
 }
+
 body {
   background-color: $main_bgc;
   text-align: center;
@@ -25,7 +49,15 @@ body {
     display: inline-block;
     width: 80%;
     margin: auto;
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 20px;
+    @media (max-width: $smartphone) {
+      width: 95%;
+    }
   }
+}
+
+footer {
+  margin: 50px 0;
+  padding: 0 20px;
 }
